@@ -50,13 +50,13 @@ body {
 }
 
  /* Ensure text wraps properly to prevent horizontal overflow */
-* {
+ * {
   word-wrap: break-word;
   overflow-wrap: break-word;
-}
+} 
 
 /* Prevent horizontal overflow on mobile devices */
- body, #root {
+ /* body, #root {
   overflow-x: hidden;
   width: 100%;
-}
+} */
