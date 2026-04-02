@@ -1,0 +1,52 @@
+ @import "tailwindcss";
+
+@theme {
+  /* --- 1. Brand Colors --- */
+  --color-brand-primary: #4f46e5;
+  --color-brand-secondary: #fb7185;
+  --color-brand-dark: #0f172a;
+  --color-brand-accent: #6366f1;
+  --color-brand-surface: #fafafa;
+  --color-brand-success: #22c55e;  
+
+  /* --- 2. Custom Animations --- */
+  @keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-15px) rotate(1deg); }
+  }
+  
+  @keyframes bounce-subtle {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+  }
+  
+  @keyframes fadeInEffect {
+    from { opacity: 0.3; transform: scale(1.05); }
+    to { opacity: 1; transform: scale(1); }
+  }
+
+  /* --- 3. Animation Utility Names --- */
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-bounce-subtle: bounce-subtle 3s ease-in-out infinite;
+  --animate-fade-in: fadeInEffect 1s ease-in-out;
+
+  /* --- 4. Fonts --- */
+  --font-main: "Inter", sans-serif;
+}
+
+/* Base Styling */
+:root {
+  --brand-primary: #4f46e5;
+  --brand-dark: #0f172a;
+  --brand-success:#22c55e;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  background-color: var(--color-brand-surface);
+  color: var(--color-brand-dark);
+  -webkit-font-smoothing: antialiased;
+}
+
+ 
