@@ -14,11 +14,12 @@ export function ProductProvider({ children }) {
       .then(res => res.json())
       .then(data => {
         // --- COMPLETE MAPPING (No Confusion) ---
+        console.log("Raw data received:", data); // Debugging log to check the structure of the received data
         const formattedProducts = data.products.map(item => {
           return {
             id: item.id,               
             name: item.title,           
-            price: item.price * 80,    
+            price: Math.round(item.price * 80),    
             image: item.thumbnail,     
             category: item.category,   
             description: item.description, 
