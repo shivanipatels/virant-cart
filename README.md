@@ -4,8 +4,8 @@ VirantCart is a premium and fully responsive e-commerce application built with *
 
 ---
 ## 🚀 Live Demo
-virant-cart.vercel.app
-
+ https://virant-cart.vercel.app
+ 
 ## ✨ Key Features
 
 * **Dynamic Product Listing:** Fetches real-time data from DummyJSON API.
